@@ -17,7 +17,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         . e e . . . . . . . . . . . . . 
         e e . . . . . . . . . . . . . . 
         `, mySprite, 100, 0)
-    pause(1000)
+    pause(5000)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
@@ -38,7 +38,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . e e . . . . . . . . . . . . . 
         e e . . . . . . . . . . . . . . 
         `, mySprite, -100, 0)
-    pause(1000)
+    pause(5000)
 })
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, otherSprite) {
     sprites.destroy(shadow, effects.disintegrate, 500)
